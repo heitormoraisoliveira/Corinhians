@@ -1,0 +1,125 @@
+:root {
+    --cor-fundo: #111111;
+    --cor-gramado: #1e3d1e;
+    --cor-texto: #ffffff;
+    --cor-destaque: #f5f242;
+    --cor-vermelho: #ff0000;
+    --cor-borda: #ffffff33;
+}
+
+body {
+    background: radial-gradient(circle at center, #1e3d1e 0%, #111111 100%);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.caixa-principal {
+    background-color: #000000dd;
+    border: 3px solid var(--cor-destaque);
+    border-radius: 20px;
+    padding: 25px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000aa;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.imagem-logo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cabecalho h1 {
+    color: var(--cor-destaque);
+    font-size: 26px;
+    margin: 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+button {
+    background-color: var(--cor-destaque);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #fff400;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-destaque);
+    background-color: #222;
+    color: var(--cor-texto);
+    font-size: 16px;
+}
+
+.caixa-perguntas {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+}
+
+.caixa-alternativas button {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-borda);
+    background-color: #222;
+    color: var(--cor-texto);
+    text-align: left;
+    transition: 0.2s;
+}
+
+.caixa-alternativas button:hover {
+    background-color: var(--cor-destaque);
+    color: #000;
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px dashed var(--cor-destaque);
+    white-space: pre-wrap;
+    color: var(--cor-destaque);
+}

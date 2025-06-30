@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corinthians: Rumo à Glória</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="caixa-principal">
+        <div class="cabecalho">
+            <img src="Corinthians_simbolo.png" alt="Logo do Corinthians" class="imagem-logo" />
+            <h1>Corinthians: Rumo à Glória</h1>
+        </div>
+
+        <div class="caixa-inicio">
+            <p>Digite seu nome para iniciar sua carreira no Timão:</p>
+            <input type="text" id="nomeJogador" placeholder="Seu nome aqui" />
+            <button onclick="iniciarJogo()">Começar</button>
+        </div>
+
+        <div class="caixa-jogo" style="display: none;">
+            <div class="caixa-perguntas"></div>
+            <div class="caixa-alternativas"></div>
+            <div class="caixa-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
